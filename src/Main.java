@@ -1,26 +1,26 @@
 package src;
-import src.MenghitungBidang.Balok;
-import src.MenghitungLuas.Persegi;
 
+import src.Buku.Detail_Buku;
+import src.Mahasiswa.Detail_Mahasiswa;
 
 public class Main {
     public static void main(String[] args) {
-        Balok cetakLuasBalok = new Balok();
-        Persegi p = new Persegi();
+        Detail_Mahasiswa tampilkanInfo = new Detail_Mahasiswa();
+        Detail_Buku tampilkanInfoBuku = new Detail_Buku();
 
-        cetakLuasBalok.panjang = 15;
-        cetakLuasBalok.lebar = 5;
-        cetakLuasBalok.tinggi = 10;
+        tampilkanInfo.nama = "Nayaka Salsabilla";
+        tampilkanInfo.nim = 22076389;
+        tampilkanInfo.umur = 20;
+        tampilkanInfo.jurusan = "Teknik Informatika";
 
-        p.setPanjang(12);
-        p.setLebar(6);
+        tampilkanInfoBuku.judul = "Pengenalan dan Implementasi Technologi Blockchain pada WEB 3.0";
+        tampilkanInfoBuku.penulis = "Dr. Muhammad Agus Zainuddin, S.T.,M.T.";
+        tampilkanInfoBuku.penerbit = "Deepublish";
+        tampilkanInfoBuku.tahun_terbit = 2023;
+        tampilkanInfoBuku.isbn = "978-623-02-7535-7";
 
-        cetakLuasBalok.HitungLuasBalok();
-        cetakLuasBalok.HitungKelilingBalok();
-        cetakLuasBalok.HitungVolumeBalok();
+        tampilkanInfo.TampilkanInfo();
+        tampilkanInfoBuku.Detail_Buku();
 
-        p.getLuas();
-        System.out.println("Luas persegi dengan sisi " + p.getLuas() );
     }
-
 }
